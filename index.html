@@ -182,7 +182,7 @@ toplamItiraf+" kişi Fenerbahçe’yi bıraktı ve Galatasaray’a geçti.";
    PAYLAŞIM LİNKLERİ
 ====================== */
 
-const siteURL = "http://bırakırsın.com/";
+const siteURL = "https://www.birakirsin.com/";
 
 const twitterText =
 "Bugün kaç kişi Fenerbahçe’yi bıraktı ve Galatasaray’a geçti bak 😂\n" +
@@ -207,7 +207,7 @@ document.getElementById("twitter").href =
 const MAX_TARGET = 1000000;
 const today = new Date().toISOString().split("T")[0];
 
-let data = JSON.parse(localStorage.getItem("birakirsın_counter"));
+let data = JSON.parse(localStorage.getItem("birakirsin_counter"));
 
 if (!data) {
     data = {
@@ -236,7 +236,7 @@ if (data.count > MAX_TARGET) {
     data.count = MAX_TARGET - Math.floor(Math.random() * 2000);
 }
 
-localStorage.setItem("birakirsın_counter", JSON.stringify(data));
+localStorage.setItem("birakirsin_counter", JSON.stringify(data));
 
 document.getElementById("sayac").innerText =
 data.count.toLocaleString("tr-TR");
